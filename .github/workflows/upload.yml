@@ -14,7 +14,7 @@ jobs:
      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
      - run: echo "🍏 This job's status is ${{ job.status }}."
      - name: Generate
-        uses: committed-consulting/epsilon-ci-action@v2
-        with:
-          build-file: build.xml
-          target: main
+       uses: committed-consulting/epsilon-ci-action@v2
+       with:
+         build-file: build.xml
+         target: main

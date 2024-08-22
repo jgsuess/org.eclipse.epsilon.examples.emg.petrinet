@@ -11,7 +11,7 @@
 			<parameter name="nouns" value="Person,Bus,Cow,Plane,Duck,Ship,Chair"/>
 			<parameter name="places" value="Waiting,Arrving,Walking,Diving,Singing,Drifting,Spinning"/>
 			<parameter name="transitions" value="Moves,Stops,Leaves,Sits,Levels,Stares,Docks,Departs,Breaks,Dissapears"/>
-			<parameter name="total" value="2000"/>		
+			<parameter name="total" value="20"/>		
 		</epsilon.emg>
 	</target>
 </project>

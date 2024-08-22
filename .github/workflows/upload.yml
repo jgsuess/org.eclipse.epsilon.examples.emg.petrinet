@@ -1,5 +1,5 @@
 name: Run FHIR Resource Upload Tool
-run-name: ${{ github.actor }} is uploading FHIR resources 🔥
+run-name: ${{ github.actor }} is running model-driven software 🤖
 on: [push]
 jobs:
   Upload:
@@ -17,4 +17,8 @@ jobs:
        uses: committed-consulting/epsilon-ci-action@v2
        with:
          build-file: build.xml
-         target: main
+      - name: Archive generated resources
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-instances
+          path: model/PetriNet2*.xmi

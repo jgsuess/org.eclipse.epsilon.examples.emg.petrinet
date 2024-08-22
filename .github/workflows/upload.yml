@@ -5,7 +5,8 @@ jobs:
   Upload:
     runs-on: ubuntu-latest
     steps:
-		uses: committed-consulting/epsilon-ci-action@v2
-		with:
-		  build-file: build.xml
-		  target: main
+      - name: Generate
+        uses: committed-consulting/epsilon-ci-action@v2
+        with:
+          build-file: build.xml
+          target: main

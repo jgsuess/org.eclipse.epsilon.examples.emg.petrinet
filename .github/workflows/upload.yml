@@ -18,8 +18,8 @@ jobs:
        with:
          build-file: build.xml
          target: main
-      - name: Archive generated resources
-        uses: actions/upload-artifact@v4
-        with:
-          name: generated-instances
-          path: model/PetriNet2*.xmi
+     - name: Archive generated resources
+       uses: actions/upload-artifact@v4
+       with:
+         name: generated-instances
+         path: model/PetriNet2*.xmi

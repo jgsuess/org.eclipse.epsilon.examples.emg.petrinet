@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:petrinet="http://www.york.ac.uk/qvt/examples/0.1/PetriNet" xsi:schemaLocation="http://www.york.ac.uk/qvt/examples/0.1/PetriNet PetriNet.ecore">
+  <petrinet:PetriNet name="RandomActions">
+    <places name="Chair Diving" incoming="/0/@arcs.1" outgoing="/0/@arcs.0"/>
+    <places name="Ship Spinning" outgoing="/0/@arcs.2 /0/@arcs.4"/>
+    <places name="Ship Singing" incoming="/0/@arcs.3"/>
+    <places name="Ship Waiting" incoming="/0/@arcs.5"/>
+    <transitions name="Chair Leaves" incoming="/0/@arcs.0" outgoing="/0/@arcs.1"/>
+    <transitions name="Ship Dissapears" incoming="/0/@arcs.2" outgoing="/0/@arcs.3"/>
+    <transitions name="Ship Dissapears" incoming="/0/@arcs.4" outgoing="/0/@arcs.5"/>
+    <arcs xsi:type="petrinet:PlaceToTransArc" source="/0/@places.0" target="/0/@transitions.0"/>
+    <arcs xsi:type="petrinet:TransToPlaceArc" source="/0/@transitions.0" target="/0/@places.0"/>
+    <arcs xsi:type="petrinet:PlaceToTransArc" weight="8" source="/0/@places.1" target="/0/@transitions.1"/>
+    <arcs xsi:type="petrinet:TransToPlaceArc" source="/0/@transitions.1" target="/0/@places.2"/>
+    <arcs xsi:type="petrinet:PlaceToTransArc" source="/0/@places.1" target="/0/@transitions.2"/>
+    <arcs xsi:type="petrinet:TransToPlaceArc" source="/0/@transitions.2" target="/0/@places.3"/>
+  </petrinet:PetriNet>
+  <petrinet:Place name="Person Singing"/>
+  <petrinet:Place name="Bus Arrving"/>
+  <petrinet:Place name="Plane Walking"/>
+  <petrinet:Place name="Person Waiting"/>
+  <petrinet:Place name="Duck Drifting"/>
+  <petrinet:Place name="Duck Diving"/>
+  <petrinet:Place name="Chair Diving"/>
+</xmi:XMI>

@@ -1,0 +1,11 @@
+name: Run FHIR Resource Upload Tool
+run-name: ${{ github.actor }} is uploading FHIR resources 🔥
+on: [push]
+jobs:
+  Upload:
+    runs-on: ubuntu-latest
+    steps:
+		uses: committed-consulting/epsilon-ci-action@v2
+		with:
+		  build-file: build.xml
+		  target: main

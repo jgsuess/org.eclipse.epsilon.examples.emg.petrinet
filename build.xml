@@ -2,7 +2,7 @@
 	<target name="main">
 		<epsilon.emf.register file="model/PetriNet.ecore"/>
 		
-		<epsilon.emf.loadModel name="M" modelfile="model/PetriNet2000.xmi" 
+		<epsilon.emf.loadModel name="M" modelfile="model/PetriNet20.xmi" 
 				metamodeluri="http://www.york.ac.uk/qvt/examples/0.1/PetriNet"
 				read="false" store="true"/>
 		
